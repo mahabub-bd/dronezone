@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+  background-image: linear-gradient(39deg, #cb0034 0%, #e06900 100%),
+    url(../../../assets/img/bg-header.webp);
+  max-height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+
+  #hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0 10rem;
+    .btn__wrapper {
+      display: flex;
+
+      place-items: center;
+      gap: 20px;
+    }
+
+    .scroll {
+      color: $color-white;
+      @include responsive(tablet) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.text-center {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+// ====================== Margin Top ======================= //
+@for $mt from 1 through 20 {
+  .mt-#{$mt} {
+    margin-top: $mt * 1rem;
+  }
+}
+// ====================== Margin Top ======================= //
+// ====================== Margin Bottom ======================= //
+@for $mb from 1 through 20 {
+  .mb-#{$mb} {
+    margin-bottom: $mb * 1rem;
+  }
+}
+// ====================== Margin Bottom ======================= //
+.m-auto {
+  margin: auto;
+}

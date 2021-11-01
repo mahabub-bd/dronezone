@@ -1,0 +1,26 @@
+.container {
+  max-width: $grid-width;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@for $col from 1 through $columns {
+  .col-#{$col} {
+    flex-basis: ($col / $columns * 100%) - 0.5%;
+
+    text-align: center;
+
+    padding: 1rem;
+    font-size: 24px;
+
+    @include responsive(tablet) {
+      flex-basis: 100%;
+    }
+  }
+}

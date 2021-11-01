@@ -1,0 +1,92 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn {
+  &,
+  &:link,
+  &:visited {
+    position: relative;
+
+    text-decoration: none;
+    padding: 1rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    font-size: 18px;
+    font-family: "Proxima Nova";
+    text-align: center;
+
+    // Change for the button element
+    border: none;
+    cursor: pointer;
+    @include responsive(tablet) {
+      padding: 1rem 3rem;
+    }
+    @include responsive(mobile-large) {
+      padding: 0.6rem 2rem;
+      font-size: 14px;
+    }
+    @include responsive(mobile-small) {
+      padding: 0.4rem 2rem;
+    }
+  }
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.2s;
+  }
+
+  &--white {
+    background-color: $color-white;
+
+    color: rgb(211, 39, 33);
+  }
+  &--transparent {
+    border: 1px solid #e67e59 !important;
+    color: $color-white;
+  }
+
+  &--animated {
+    @include animation(moveInBottom, 0.5s, ease-out);
+    animation-delay: 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+      transform: translateY(-2px);
+    }
+    &:active {
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+      transform: translateY(0);
+    }
+  }
+}

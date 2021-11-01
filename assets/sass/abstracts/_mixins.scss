@@ -1,0 +1,100 @@
+@mixin theme($name, $color) {
+  .#{$name} {
+    .element {
+      color: $color;
+    }
+  }
+}
+
+@mixin animation($name, $duration, $timing) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-timing-function: $timing;
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Media Quary
+/*
+
+Mobile-Small           0-320 PX 
+Mobile-Medium        320-375 PX 
+Mobile-Large         375-428 PX 
+Tablet               428-768 PX
+Laptop-Small        768-1024 PX 
+Laptop-Medium      1024-1280 PX 
+Laptop-Large       1280-1440 PX 
+Desktop-HD         1440-1920 PX
+Desktop-2K         1920PX+
+*/
+
+/*
+$breakpoint arguement 
+
+-- mobile-small
+-- mobile-medium
+-- mobile-large
+-- laptop-small
+-- laptop-medium
+-- laptop-large
+-- tab-land
+-- big-desktop
+ORDER : Base + Typography > Genaral Layout + Grid > Page Layout  > Components 
+*/
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile-small {
+    @media only screen and (max-width: 20em) {
+      //320px
+      @content;
+    }
+  } @else if $breakpoint == mobile-medium {
+    @media only screen and (max-width: 23.4375em) {
+      //375px
+      @content;
+    }
+  } @else if $breakpoint == mobile-large {
+    @media only screen and (max-width: 26.75em) {
+      //428px
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media only screen and (max-width: 48em) {
+      //768px
+      @content;
+    }
+  } @else if $breakpoint == laptop-small {
+    @media only screen and (max-width: 64em) {
+      //1024px
+      @content;
+    }
+  } @else if $breakpoint == laptop-medium {
+    @media only screen and (max-width: 80em) {
+      //1280px
+      @content;
+    }
+  } @else if $breakpoint == laptop-large {
+    @media only screen and (max-width: 90em) {
+      //1440px
+      @content;
+    }
+  } @else if $breakpoint == big-desktop {
+    @media only screen and (min-width: 120.05em) {
+      //1800px+
+      @content;
+    }
+  }
+}
+// Media Quary

@@ -1,0 +1,121 @@
+/*==================Nav====================*/
+.nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: $color-white;
+  padding-top: 5rem;
+  @include responsive(tablet) {
+    padding: 3rem;
+  }
+  @include responsive(mobile-large) {
+    padding: 2rem;
+  }
+  // &__logo {
+  // }
+
+  &__menu {
+    @include responsive(laptop-small) {
+      // For Mobile menu
+      display: none;
+    }
+    .nav__list {
+      .nav__item {
+        display: inline-block;
+        margin: 2rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        a {
+          color: #fff;
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+  }
+}
+#toggle {
+  position: absolute;
+  right: 5%;
+  display: none; /* Hide Mobile Nav on Desktop or big devices */
+  cursor: pointer;
+  user-select: none;
+  font-size: 4rem;
+  svg {
+    width: 6rem;
+    height: 6rem;
+    @include responsive(mobile-large) {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  @include responsive(laptop-small) {
+    //for mobile menu
+    display: block;
+  }
+}
+#myNav {
+  display: block;
+}
+.overlay {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(254, 205, 220);
+  z-index: 9999;
+  overflow: hidden;
+  color: #d90647;
+  transition: 0.3s;
+  transform-origin: top;
+  text-align: center;
+  &__content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+
+    a {
+      color: #363636 !important;
+      font-size: 6rem;
+      font-weight: 600;
+      display: block;
+      margin-top: 2rem;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+      @include responsive(phone) {
+        font-size: 4rem;
+      }
+
+      &:hover {
+        color: $color-primary !important;
+      }
+    }
+  }
+}
+
+/*==================Sticky  Menu====================*/
+.sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 500;
+  box-shadow: 0 10px 30px #e6e6e6;
+  color: #d90647 !important;
+  padding: 1rem 4rem;
+  @include responsive(tablet) {
+    padding: 2rem 4rem;
+  }
+  transition: 0.3s;
+  a {
+    color: #d90647;
+  }
+}

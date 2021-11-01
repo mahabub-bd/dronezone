@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Dronezone PSD to HTML</title>
+</head>
+
+<body>
+    <!-- ================ Header Start ================= -->
+    <header class="header" id="home">
+        <nav class="nav container ">
+            <div class="nav__logo">
+                <a href="#" class="logo"><img src="assets/img/logo.png" alt="Dronezone"></a>
+            </div>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#drone" class="nav__link">Our Drones</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#howto" class="nav__link"> Our realizations</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="btn btn--transparent">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="toggle">
+                <span onclick="openNav()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgba(255, 255, 255, 1);">
+                        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                    </svg></span>
+            </div>
+
+            <div id="myNav" class="overlay" style="width: 0px">
+                <div class="overlay__content">
+                    <a href="javascript:void()" class="close-btn" onclick="closeNav()">X</a>
+                    <a href="#home" onclick="closeNav()">HOME</a>
+                    <a href="#features" onclick="closeNav()">Features</a>
+                    <a href="#tesimonial" onclick="closeNav()">Testimonial</a>
+                    <a href="#howto" onclick="closeNav()">HOW TO</a>
+                    <a href="#download" onclick="closeNav()">DOWNLOAD</a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="hero">
+
+
+            <h1 class="heading__primary">Film your event with us!</h1>
+            <p class="mt-3 paragraph__hero">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo. ,<br>
+                Nunc vel nibh tempor, pharetra lectus congue, luctus orci.</p>
+
+            <div class="btn__wrapper mt-6">
+                <a href="#" class="btn btn--white">Ask for price</a>
+                <a href="#" class="btn btn--transparent">Watch video</a>
+            </div>
+            <div class="scroll mt-20 text-center">
+                <div class="scroll__icon"><a href="#"> <img src="assets/img/scoll.png" alt=""></a></div>
+                <p class="scroll__text">Scroll Down</p>
+
+
+            </div>
+
+
+        </div>
+
+
+        <button onclick="topScroll()" id="scrollUp" title="Go to top" style="display: none">
+            <img src="./assets/icon/arrow.svg" alt="" />
+        </button>
+
+    </header>
+    <!-- ================ Header End =================  -->
+
+
+
+</body>
+
+</html>
