@@ -1,12 +1,18 @@
 /*==================Nav====================*/
 .nav {
   display: flex;
+  width: 70%;
+  margin: auto;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
   position: relative;
   color: $color-white;
-  padding-top: 5rem;
+  padding-top: 3rem;
+  @include responsive(laptop-small) {
+    padding: 4rem;
+    width: 100%;
+  }
   @include responsive(tablet) {
     padding: 3rem;
   }
@@ -17,7 +23,7 @@
   // }
 
   &__menu {
-    @include responsive(laptop-small) {
+    @include responsive(tablet) {
       // For Mobile menu
       display: none;
     }
@@ -43,17 +49,18 @@
   display: none; /* Hide Mobile Nav on Desktop or big devices */
   cursor: pointer;
   user-select: none;
-  font-size: 4rem;
+
   svg {
     width: 6rem;
     height: 6rem;
+
     @include responsive(mobile-large) {
       width: 4rem;
       height: 4rem;
     }
   }
 
-  @include responsive(laptop-small) {
+  @include responsive(tablet) {
     //for mobile menu
     display: block;
   }
@@ -65,13 +72,14 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
-  background-color: rgb(254, 205, 220);
+  right: 0;
+
+  background-color: rgba(254, 255, 255, 0.9);
   z-index: 9999;
   overflow: hidden;
   color: #d90647;
   transition: 0.3s;
-  transform-origin: top;
+
   text-align: center;
   &__content {
     text-align: center;
@@ -82,15 +90,23 @@
     display: block;
 
     a {
-      color: #363636 !important;
+      background: linear-gradient(
+        51deg,
+        rgba(203, 0, 53, 0.8) 0%,
+        rgba(224, 105, 0, 0.8) 100%
+      );
+      background-clip: border-box;
+      text-align: center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-size: 6rem;
       font-weight: 600;
       display: block;
       margin-top: 2rem;
       letter-spacing: 0.3rem;
       text-transform: uppercase;
-      @include responsive(phone) {
-        font-size: 4rem;
+      @include responsive(mobile-large) {
+        font-size: 3rem;
       }
 
       &:hover {
@@ -105,14 +121,19 @@
   position: fixed;
   left: 0;
   top: 0;
+  right: 0;
   width: 100%;
-  background-color: #fff;
+  background: linear-gradient(
+    51deg,
+    rgba(203, 0, 53, 1) 0%,
+    rgba(224, 105, 0, 1) 100%
+  );
   z-index: 500;
-  box-shadow: 0 10px 30px #e6e6e6;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   color: #d90647 !important;
-  padding: 1rem 4rem;
+  padding: 0 4rem;
   @include responsive(tablet) {
-    padding: 2rem 4rem;
+    padding: 2rem 5rem;
   }
   transition: 0.3s;
   a {

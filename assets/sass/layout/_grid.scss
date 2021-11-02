@@ -1,5 +1,5 @@
 .container {
-  max-width: $grid-width;
+  max-width: $container-width;
   margin: 0 auto;
 }
 .row {
@@ -7,7 +7,6 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 @for $col from 1 through $columns {
@@ -16,11 +15,11 @@
 
     text-align: center;
 
-    padding: 1rem;
     font-size: 24px;
 
     @include responsive(tablet) {
       flex-basis: 100%;
+      text-align: center;
     }
   }
 }

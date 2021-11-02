@@ -8,7 +8,7 @@
     position: relative;
 
     text-decoration: none;
-    padding: 1rem 4rem;
+    padding: 1rem 5.2rem;
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
@@ -57,36 +57,37 @@
     color: rgb(211, 39, 33);
   }
   &--transparent {
-    border: 1px solid #e67e59 !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
     color: $color-white;
+    background: transparent;
   }
 
+  &--contact {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    padding: 0.5rem 1.9rem !important;
+  }
+
+  &--blue {
+    background-color: #264699;
+    background-image: linear-gradient(
+      208deg,
+      #4864a9 0%,
+      rgba(72, 100, 169, 0) 100%
+    );
+    color: $color-white;
+    margin: 5rem auto 10rem;
+
+    @include responsive(tablet) {
+      margin: 5rem auto 5rem;
+    }
+    @include responsive(mobile-large) {
+      margin: 3rem auto 3rem;
+    }
+  }
   &--animated {
     @include animation(moveInBottom, 0.5s, ease-out);
     animation-delay: 0.75s;
     animation-fill-mode: backwards;
-  }
-}
-
-.btn-text {
-  &:link,
-  &:visited {
-    color: $color-primary;
-    display: inline-block;
-    text-decoration: none;
-    border-bottom: 1px solid $color-primary;
-    padding: 3px;
-    transition: all 0.2s;
-
-    &:hover {
-      background-color: $color-primary;
-      color: $color-white;
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-      transform: translateY(-2px);
-    }
-    &:active {
-      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
-      transform: translateY(0);
-    }
   }
 }

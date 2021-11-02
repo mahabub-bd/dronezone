@@ -12,7 +12,8 @@
 <body>
     <!-- ================ Header Start ================= -->
     <header class="header" id="home">
-        <nav class="nav container ">
+        <nav class="nav ">
+
             <div class="nav__logo">
                 <a href="#" class="logo"><img src="assets/img/logo.png" alt="Dronezone"></a>
             </div>
@@ -28,10 +29,10 @@
                         <a href="#drone" class="nav__link">Our Drones</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#howto" class="nav__link"> Our realizations</a>
+                        <a href="#realizations" class="nav__link"> Our realizations</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="btn btn--transparent">Contact</a>
+                        <a href="#contact" class="btn btn--contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -48,10 +49,10 @@
                 <div class="overlay__content">
                     <a href="javascript:void()" class="close-btn" onclick="closeNav()">X</a>
                     <a href="#home" onclick="closeNav()">HOME</a>
-                    <a href="#features" onclick="closeNav()">Features</a>
-                    <a href="#tesimonial" onclick="closeNav()">Testimonial</a>
-                    <a href="#howto" onclick="closeNav()">HOW TO</a>
-                    <a href="#download" onclick="closeNav()">DOWNLOAD</a>
+                    <a href="#about" onclick="closeNav()">About</a>
+                    <a href="#drone" onclick="closeNav()">Our Drones</a>
+                    <a href="#howto" onclick="closeNav()">Our realizations</a>
+                    <a href="#contact" onclick="closeNav()">Contact</a>
                 </div>
             </div>
         </nav>
@@ -64,17 +65,14 @@
                 Nunc vel nibh tempor, pharetra lectus congue, luctus orci.</p>
 
             <div class="btn__wrapper mt-6">
-                <a href="#" class="btn btn--white">Ask for price</a>
-                <a href="#" class="btn btn--transparent">Watch video</a>
+                <a href="#" class="btn btn--white btn--animated">Ask for price</a>
+                <a href="#" class="btn btn--transparent btn--animated">Watch video</a>
             </div>
             <div class="scroll mt-20 text-center">
-                <div class="scroll__icon"><a href="#"> <img src="assets/img/scoll.png" alt=""></a></div>
+                <div class="scroll__icon"><button id="downscroll" href="#" onclick="downScroll()"> <img
+                            src="assets/img/scoll.png" alt=""></button></div>
                 <p class="scroll__text">Scroll Down</p>
-
-
             </div>
-
-
         </div>
 
 
@@ -84,9 +82,153 @@
 
     </header>
     <!-- ================ Header End =================  -->
+    <!-- ================ About Start =================  -->
 
+    <section id="about" class="about">
+        <div class="about__container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="product">
+                        <div class="product__image">
+                            <img src="assets/img/drone.png" class="mt-2 mb-2" alt="drono_photo">
+                        </div>
+                        <div class="product__title">
+                            <h2 class="heading__secondary">From air</h2>
+                        </div>
+                        <p class="product__description mt-2">Pellentesque eget nunc sit amet urna ullamcorper fermentum
+                            et eu
+                            leo</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="product">
+                        <div class="product__image">
+                            <img src="assets/img/drone-1.png" alt="drono_photo">
+                        </div>
+                        <div class="product__title">
+                            <h2 class="heading__secondary">Best Drone</h2>
+                        </div>
 
+                        <p class="product__description mt-2">Pellentesque eget nunc sit amet urna ullamcorper fermentum
+                            et eu
+                            leo</p>
 
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="product">
+                        <div class="product__image">
+                            <img src="assets/img/propeller.png" alt="drono_photo">
+                        </div>
+                        <div class="product__title">
+                            <h2 class="heading__secondary">Speed</h2>
+                        </div>
+                        <p class="product__description mt-2">Pellentesque eget nunc sit amet urna ullamcorper fermentum
+                            et eu
+                            leo</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="product">
+                        <div class="product__image">
+                            <img src="assets/img/control.png" alt="drono_photo">
+                        </div>
+                        <div class="product__title">
+                            <h2 class="heading__secondary">Long Range</h2>
+                        </div>
+                        <p class="product__description mt-2">Pellentesque eget nunc sit amet urna ullamcorper fermentum
+                            et eu
+                            leo</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn--blue ">Ask for price</a>
+
+        </div>
+    </section>
+    <!-- ================ About End =================  -->
+    <!-- ================ Ourdrone Start =================  -->
+    <section id="ourdrone" class="ourdrone">
+        <div class="row">
+            <div class="col-8">
+                <div class="ourdrone__text"></div>
+                <h3 class="heading__gradient">Nature from the air</h3>
+                <p class="paragraph__ourdrone">Mauris consequat libero metus, nec ultricies sem efficitur quis. Integer
+                    bibendum eget metus ac
+                    accumsan. Integer sit amet lacus egestas, semper est quis, viverra ex.</p>
+                <div class="points mt-2">
+                    <ol ">
+                        <li>
+                            <p class=" point">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.
+                        Nunc
+                        vel nibh tempor, pharetra lectus congue, luctus orci.</p>
+                        </li>
+                        <li>
+                            <p class="point">Mauris consequat libero metus, nec ultricies sem efficitur quis. Integer
+                                bibendum ege metus ac accumsan.</p>
+                        </li>
+                        <li>
+                            <p class="point">Integer sit amet lacus egestas, semper est quis, viverra ex. Mauris
+                                consequat libero metus, nec ultricies .</p>
+                        </li>
+                        <li>
+                            <p class="point">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo. Nunc
+                                vel nibh tempor, pharetra lectus congue, luctus orci.</p>
+                        </li>
+                        <li>
+                            <p class="point">Mauris consequat libero metus, nec ultricies sem efficitur quis. Integer
+                                bibendum eget metus ac accumsan.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-4"><img src="assets/img/dronezone-final.png" alt=""></div>
+        </div>
+    </section>
+    <!-- ================ Ourdrone End =================  -->
+    <!-- ================ Ourdrone End =================  -->
+
+    <section id="realizations" class="realizations">
+        <div class="row">
+            <div class="col-6">
+                <div class="nature__image">
+                    <img src="assets/img/nature.png" alt="nature">
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="nature__text">
+                    <h3 class="heading__gradient mt-2">Nature from the air</h3>
+                    <p class="paragraph__realizations">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu
+                        leo. Nunc vel nibh tempor,
+                        pharetra lectus congue, luctus orci nec ultricies sem efficitur quis. Integer bibendum eget
+                        metus ac accumsan</p>
+                    <a href="#" class="btn btn--blue ">Ask for price</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="nature__text">
+                    <h3 class="heading__gradient mt-2">City from the air</h3>
+                    <p class="paragraph__realizations">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu
+                        leo. Nunc vel nibh tempor,
+                        pharetra lectus congue, luctus orci nec ultricies sem efficitur quis. Integer bibendum eget
+                        metus ac accumsan</p>
+                    <a href="#" class="btn btn--blue ">Ask for price</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="nature__image">
+                    <img src="assets/img/nature.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ JS =================  -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -9,14 +9,9 @@
 html {
   font-size: 62.5%; /* 1 rem = 10px 10px/16px =62.5% */
 
-  @include responsive(tab-land) {
+  @include responsive(laptop-medium) {
     /* width<1200? */
     font-size: 56.25%; /* 1 rem = 9px 9px/16px =56.25% */
-  }
-
-  @include responsive(tab-port) {
-    /* width<900? */
-    font-size: 50%; /* 1 rem = 8px 8px/16px =50% */
   }
 
   @include responsive(big-desktop) {
@@ -29,7 +24,6 @@ body {
   box-sizing: border-box;
 }
 ::selection {
-  background-color: $color-primary;
   color: $color-white;
 }
 img {

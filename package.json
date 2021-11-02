@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/mahabub-hossain-bd/landingpage_delivery/issues"
   },
-  "homepage": "https://github.com/mahabub-hossain-bd/landingpage_delivery#readme"
+  "homepage": "https://github.com/mahabub-hossain-bd/landingpage_delivery#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }

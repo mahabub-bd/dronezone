@@ -1,3 +1,103 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+.about {
+  background-color: $color-grey-light;
+  text-align: center;
+
+  &__container {
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 13rem;
+    @include responsive(mobile-large) {
+      padding-top: 5rem;
+    }
+    .product {
+      &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        &:hover {
+          transform: rotate(5deg);
+        }
+      }
+      &__title {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+.ourdrone {
+  padding-left: 30rem;
+  margin-left: auto;
+  margin-top: 4rem;
+  margin-bottom: 9.5rem;
+  @include responsive(laptop-large) {
+    padding-left: 5rem;
+  }
+  @include responsive(mobile-large) {
+    padding: 1rem;
+    text-align: center;
+  }
+  .points {
+    text-align: left;
+    position: relative;
+    ol {
+      list-style: none;
+      column-count: 2;
+      @include responsive(mobile-large) {
+        column-count: 1;
+      }
+      li {
+        counter-increment: counter;
+        margin: 0.4rem;
+        font-size: 1.6rem;
+        position: relative;
+        &::before {
+          content: counter(counter);
+          border: 2px solid #a7acbc;
+          background: #efefef;
+          width: 4.2rem;
+          height: 4.2rem;
+          border-radius: 50%;
+          display: inline-block;
+          line-height: 4rem;
+          color: #a7acbc;
+          text-align: center;
+          margin-right: 0.5rem;
+          top: 1rem;
+          position: absolute;
+        }
+        p {
+          font-size: 1.5rem;
+          margin: 1rem 7rem 0;
+          @include responsive(mobile-large) {
+            margin: 1rem 3rem 6rem 7rem;
+          }
+          color: #a7acbc;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+/*========================= realization  ============================*/
+.realizations {
+  background-color: $color-grey-light;
+  .nature__text {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    max-width: 500px;
+    text-align: left;
+    @include responsive(tablet) {
+      text-align: center;
+      margin: auto;
+    }
+    @include responsive(mobile-large) {
+      text-align: center;
+    }
+  }
+}

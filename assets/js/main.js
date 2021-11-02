@@ -21,13 +21,18 @@ function topScroll() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+/*  Go to  down verticaly 800px when click button*/
+function downScroll() {
+    window.scrollBy(0, 800);
+}
+
 window.onscroll = function () {
     navSticky();
     scroll();
 }
 /* Functional Sticky Navbar */
 const navbar = document.querySelector("nav");
-const services = document.querySelector("#features");
+const services = document.querySelector("#about");
 const sticky = services.offsetTop;
 
 

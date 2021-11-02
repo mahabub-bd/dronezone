@@ -6,13 +6,12 @@ $color-primary-dark: #28b485;
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
 
-$color-tertiary-light: #2998ff;
+$color-blue: #2998ff;
 $color-tertiary-dark: #5643fa;
 
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
+$color-grey-light: #f7f7f7;
 
-$color-grey-dark: #777;
+$color-grey-dark: #5e6372;
 $color-grey-dark-2: #999;
 $color-grey-dark-3: #333;
 
@@ -21,10 +20,18 @@ $color-black: #000;
 
 // Font
 $default-font-size: 1.6rem;
-
+$font: lato;
+/*========================= Font Weight  ============================*/
+$font-thin: 100;
+$font-extra-light: 200;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extra-bold: 800;
+$font-black: 900;
 // GRID
 $columns: 12; // Number of columns in the grid system
 $grid-width: 115rem;
-$gutter-vertical: 8rem;
-$gutter-vertical-small: 6rem;
-$gutter-horizontal: 6rem;
+$container-width: 134rem;
