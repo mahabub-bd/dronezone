@@ -1,0 +1,53 @@
+.subscribe__form {
+  margin: 3.2rem 2rem 4rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  @include responsive(phone) {
+    margin-top: 1.2rem;
+  }
+  &--input {
+    margin-right: -4rem;
+    width: 20%;
+    height: 38px;
+
+    @include responsive(laptop-small) {
+      width: 40%;
+    }
+
+    @include responsive(tablet) {
+      width: 40%;
+    }
+    @include responsive(mobile-large) {
+      width: 80%;
+    }
+    font-size: 1.8rem;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 300;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    &:focus {
+      outline: none;
+    }
+  }
+
+  ::placeholder {
+    padding: 0 2rem;
+    color: #ffffff;
+  }
+  &--submit {
+    position: static;
+    color: #d32721;
+    margin-top: 0.1rem;
+    @include responsive(mobile-large) {
+      padding: 1.2rem 3rem !important;
+      font-size: 14px;
+    }
+    &:hover {
+      transform: translate(0);
+    }
+  }
+}

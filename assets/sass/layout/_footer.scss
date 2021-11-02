@@ -1,3 +1,26 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+  font-size: 1.8rem;
+  @include responsive(mobile-large) {
+    padding: 2rem;
+    font-size: 1.4rem;
+  }
+  margin: 10rem auto;
+  &__text {
+    line-height: 36px;
+    color: #a7acbc;
+    font-weight: 300;
+
+    text-align: center;
+  }
+  small {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 36px;
+    color: #a7acbc;
+    font-weight: 300;
+    display: block;
+  }
+}

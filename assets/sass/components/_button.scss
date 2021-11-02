@@ -90,4 +90,8 @@
     animation-delay: 0.75s;
     animation-fill-mode: backwards;
   }
+
+  &--submit {
+    @extend .btn;
+  }
 }

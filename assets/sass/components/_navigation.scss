@@ -19,8 +19,10 @@
   @include responsive(mobile-large) {
     padding: 2rem;
   }
-  // &__logo {
-  // }
+  &__logo {
+    @include responsive(mobile-large) {
+    }
+  }
 
   &__menu {
     @include responsive(tablet) {
@@ -106,7 +108,7 @@
       letter-spacing: 0.3rem;
       text-transform: uppercase;
       @include responsive(mobile-large) {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
 
       &:hover {
@@ -130,13 +132,16 @@
   );
   z-index: 500;
   box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-  color: #d90647 !important;
+
   padding: 0 4rem;
   @include responsive(tablet) {
     padding: 2rem 5rem;
   }
   transition: 0.3s;
-  a {
-    color: #d90647;
+  .nav {
+    padding-left: 2rem;
+    @include responsive(tablet) {
+      padding-left: -3rem;
+    }
   }
 }
