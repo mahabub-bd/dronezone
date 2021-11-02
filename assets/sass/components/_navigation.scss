@@ -45,6 +45,8 @@
     }
   }
 }
+
+/*==================  Menu Toggler====================*/
 #toggle {
   position: absolute;
   right: 5%;
@@ -67,9 +69,11 @@
     display: block;
   }
 }
-#myNav {
+#overlaymenu {
   display: block;
 }
+
+/*==================  Menu Toggler====================*/
 .overlay {
   height: 100vh;
   position: fixed;
@@ -145,3 +149,4 @@
     }
   }
 }
+/*==================Sticky  Menu====================*/

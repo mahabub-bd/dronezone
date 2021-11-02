@@ -4,6 +4,7 @@
   align-items: center;
   position: relative;
   justify-content: center;
+
   @include responsive(phone) {
     margin-top: 1.2rem;
   }
@@ -11,6 +12,7 @@
     margin-right: -4rem;
     width: 20%;
     height: 38px;
+    padding-left: 3rem;
 
     @include responsive(laptop-small) {
       width: 40%;
