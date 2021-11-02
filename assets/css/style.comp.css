@@ -872,12 +872,9 @@ header {
   transition: 0.3s; }
   @media only screen and (max-width: 48em) {
     .sticky {
-      padding: 2rem 5rem; } }
+      padding: 2rem 3rem; } }
   .sticky .nav {
     padding-left: 2rem; }
-    @media only screen and (max-width: 48em) {
-      .sticky .nav {
-        padding-left: -3rem; } }
 
 /*==================Sticky  Menu====================*/
 .about {

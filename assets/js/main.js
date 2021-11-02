@@ -1,9 +1,9 @@
 /* Mobile Menu Show when scren less than 900 */
 function openNav() {
-    document.getElementById('myNav').style.width = "100%";
+    document.getElementById('overlaymenu').style.width = "100%";
 };
 function closeNav() {
-    document.getElementById('myNav').style.width = "0";
+    document.getElementById('overlaymenu').style.width = "0";
 }
 
 // Go to top btn automatictly when cross hero section

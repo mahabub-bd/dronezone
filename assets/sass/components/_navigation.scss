@@ -139,13 +139,12 @@
 
   padding: 0 4rem;
   @include responsive(tablet) {
-    padding: 2rem 5rem;
+    padding: 2rem 3rem;
   }
   transition: 0.3s;
   .nav {
     padding-left: 2rem;
     @include responsive(tablet) {
-      padding-left: -3rem;
     }
   }
 }
