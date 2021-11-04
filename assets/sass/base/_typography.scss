@@ -9,9 +9,7 @@ body {
   @include responsive(mobile-large) {
     font-size: 3.5rem;
   }
-  @include responsive(mobile-large) {
-    font-size: 3.5rem;
-  }
+
   @include responsive(mobile-medium) {
     font-size: 3.2rem;
   }

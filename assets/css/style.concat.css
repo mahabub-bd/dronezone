@@ -263,9 +263,6 @@ body {
   @media only screen and (max-width: 26.75em) {
     .heading__primary {
       font-size: 3.5rem; } }
-  @media only screen and (max-width: 26.75em) {
-    .heading__primary {
-      font-size: 3.5rem; } }
   @media only screen and (max-width: 23.4375em) {
     .heading__primary {
       font-size: 3.2rem; } }
@@ -583,7 +580,7 @@ header {
     @media only screen and (max-width: 26.75em) {
       header #hero {
         padding: 5rem 1.5rem 5rem; } }
-    @media only screen and (max-width: 26.75em) {
+    @media only screen and (max-width: 20em) {
       header #hero {
         padding: 5rem 1rem 5rem; } }
     header #hero .btn__wrapper {
