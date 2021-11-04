@@ -1,32 +1,32 @@
 /* Mobile Menu Show when scren less than 900 */
-function openNav() {
+openNav = () => {
     document.getElementById('overlaymenu').style.width = "100%";
 };
-function closeNav() {
+closeNav = () => {
     document.getElementById('overlaymenu').style.width = "0";
 }
 
 // Go to top btn automatictly when cross hero section
 topBtn = document.getElementById("scrollUp")
 
-function scroll() {
+scroll = () => {
     if (document.body.scrollTop > sticky || document.documentElement.scrollTop > sticky) {
         topBtn.style.display = "block";
     }
     else { topBtn.style.display = "none"; }
 }
 // Go to top when click button
-function topScroll() {
+topScroll = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 /*  Go to  down verticaly 800px when click button*/
-function downScroll() {
+downScroll = () => {
     window.scrollBy(0, 800);
 }
 
-window.onscroll = function () {
+window.onscroll = () => {
     navSticky();
     scroll();
 }
@@ -35,8 +35,7 @@ const navbar = document.querySelector("nav");
 const services = document.querySelector("#about");
 const sticky = services.offsetTop;
 
-
-function navSticky() {
+navSticky = () => {
     if (window.pageYOffset > sticky) {
         navbar.classList.add("sticky")
     } else {

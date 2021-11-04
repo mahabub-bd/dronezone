@@ -15,7 +15,10 @@ header {
     }
 
     @include responsive(mobile-large) {
-      padding: 5rem 0 5rem;
+      padding: 5rem 1.5rem 5rem;
+    }
+    @include responsive(mobile-large) {
+      padding: 5rem 1rem 5rem;
     }
     .btn__wrapper {
       display: flex;

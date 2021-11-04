@@ -1,3 +1,6 @@
+.animatedmoveinleft {
+  @include animation(moveInBottom, 1s, 0.55s);
+}
 // Keyframe Move in left
 @keyframes moveInLeft {
   0% {
